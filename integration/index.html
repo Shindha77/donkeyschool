@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="c'est mon portfolio :)">
   <title>Mon Portfolio</title>
 </head>
 
@@ -113,19 +114,28 @@
       <div>
         <h2 id="contact">contact</h2>
       </div>
-      <div>
-        <p>nom et prénom</p>
-        <img src="https://via.placeholder.com/150" alt="je ne sais pas faire les formulaires">
-        <p>e mail</p>
-        <img src="https://via.placeholder.com/150" alt="je ne sais pas faire les formulaires">
-        <p>message</p>
-        <img src="https://via.placeholder.com/150" alt="je ne sais pas faire les formulaires">
-        <img src="https://via.placeholder.com/150" alt="envoyé">
-      </div>
+      <form action="/formulaire" method="post">
+        <div>
+          <label for="name">nom et prénom :</label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">e-mail :</label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+          <label for="msg">message :</label>
+          <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">envoyer</button>
+        </div>
+      </form>
     </section>
   </main>
-<footer>
-  <p><a href="http://monportfolio.com">monportfolio.com</a></p>
-</footer>
+  <footer>
+    <p><a href="http://monportfolio.com">monportfolio.com</a></p>
+  </footer>
 </body>
+
 </html>
