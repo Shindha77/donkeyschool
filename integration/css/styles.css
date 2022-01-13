@@ -1,0 +1,89 @@
+.img:hover {
+    opacity: 0.7;
+}
+
+.rounded {
+    border-radius: 3px;
+}
+.date {
+    border: 1px solid black;
+}
+
+img:first-child {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+.dropdownmenu {
+    width: 140px;
+    border: 1px solid black;
+}
+.dropdownmenu,
+.dropdownmenu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.dropdownmenu ul {
+    display: none;
+}
+.dropdownmenu li {
+    position: relative;
+}
+.dropdownmenu a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 10px;
+    text-align: center;
+}
+.dropdownmenu li:hover ul {
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 100;
+}.dropdownmenu li {
+    background-color: slategrey;
+}
+.dropdownmenu li a {
+    color: white;
+}
+.dropdownmenu li:hover {
+    background-color: rosybrown;
+}
+.dropdownmenu li:hover a {
+    color: black;
+}
+.dropdownmenu ul li {
+    background-color: slategray;
+}
+.dropdownmenu ul li:hover {
+    background-color: rosybrown;
+}
+.dropdownmenu ul li a {
+    color: white;
+}
+.dropdownmenu ul li:hover a {
+    color: black;
+}
+
+nav {
+    position: fixed;
+}
+
+main {
+    position:relative;
+}
+
+nav {
+    z-index:2;
+}
+
+main {
+    z-index:1;
+}
