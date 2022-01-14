@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="c'est mon portfolio! :)">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/mobile-styles.css" media="screen and (max-width:600px)">
   <link rel="stylesheet" href="css/desktop-styles.css" media="screen and (min-width:601px)">
 
@@ -15,13 +16,28 @@
 <body>
   <header>
     <nav>
-      <ul class="dropdownmenu">
-        <li id="menu"><a>menu</a>
-          <ul>
-            <li><a href="#projets">projets</a></li>
-            <li><a href="#études">études</a></li>
-            <li><a href="#articles">articles</a></li>
-            <li><a href="#contact">contact</a></li>
+      <ul>
+        <li class="menu-projets"><a href="#projets">projets</a>
+          <ul class="submenu">
+            <li><a href="#projet1">Projet 1</a></li>
+            <li><a href="#projet2">Projet 2</a></li>
+            <li><a href="#projet3">Projet 3</a></li>
+          </ul>
+        </li>
+        <li class="menu-etudes"><a href="#études">études</a>
+          <ul class="submenu">
+            <li><a href="#études">mes diplômes</a></li>
+          </ul>
+        </li>
+        <li class="menu-articles"><a href="#articles">articles</a>
+          <ul class="submenu">
+            <li><a href="#article1">article 1</a></li>
+            <li><a href="#article2">article 2</a></li>
+          </ul>
+        </li>
+        <li class="menu-contact"><a href="#contact">contact</a>
+          <ul class="submenu">
+            <li><a href="#contact">formulaire</a></li>
           </ul>
         </li>
       </ul>
@@ -29,9 +45,6 @@
   </header>
   <main>
     <section>
-      `<div>
-        <h1>mon portfolio</h1>
-      </div>
       <div>
         <img class="img rounded" src="img/terrasse.jpg" alt="photo de quelquechose">
         <p>nom prénom</p>
@@ -42,37 +55,34 @@
         <h2 id="projets">projets réalisés</h2>
       </div>
       <div>
-        <a href="http://placeholder.com"><img class="img rounded" src="https://via.placeholder.com/150"
-            alt="projet 1"></a>
+        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="projet 1">
         <h3>projet 1</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa autem at, beatae fugiat placeat tempore,
           rem impedit molestiae magnam neque officiis voluptatem odio sit eveniet suscipit consequuntur a eaque?</p>
         <button>en savoir plus</button>
       </div>
       <div>
-        <a href="http://placeholder.com"><img class="img rounded" src="https://via.placeholder.com/150"
-            alt="projet 2"></a>
+        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="projet 2">
         <h3>projet 2</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa autem at, beatae fugiat placeat tempore,
           rem impedit molestiae magnam neque officiis voluptatem odio sit eveniet suscipit consequuntur a eaque?</p>
         <button>en savoir plus</button>
       </div>
       <div>
-        <a href="http://placeholder.com"><img class="img rounded" src="https://via.placeholder.com/150"
-            alt="projet 3"></a>
+        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="projet 3">
         <h3>projet 3</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa autem at, beatae fugiat placeat tempore,
           rem impedit molestiae magnam neque officiis voluptatem odio sit eveniet suscipit consequuntur a eaque?</p>
         <button>en savoir plus</button>
       </div>
     </section>
+    <hr>
     <section>
       <div>
         <h2 id="études">études</h2>
       </div>
       <div>
-        <a href="http://placeholder.com"><img class="img rounded" src="https://via.placeholder.com/150"
-            alt="photo de profile"></a>
+        <img class="rounded" src="https://via.placeholder.com/150" alt="photo de profile">
         <ul>
           <li>nom</li>
           <li>prénom</li>
@@ -81,6 +91,7 @@
           <li>numéro de téléphone</li>
         </ul>
       </div>
+      <hr>
       <div>
         <p class="date">date</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti sunt laborum, repudiandae
@@ -106,31 +117,31 @@
           soluta dolor dicta hic assumenda at cumque a magni quas tenetur labore neque praesentium? Id, quaerat.</p>
       </div>
     </section>
+    <hr>
     <section>
       <div>
         <h2 id="articles">articles</h2>
       </div>
-      <div>
-        <a href="http://placeholder.com"><img class="img rounded" src="https://via.placeholder.com/150"
-            alt="article 1"></a>
+      <article>
+        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="article 1">
         <h3>article 1</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iusto distinctio animi sapiente similique
           libero, velit accusamus nobis cumque officiis? Unde culpa provident quis, molestiae explicabo eius fugiat
           impedit consequuntur.</p>
         <span><button>lire</button></span>
         <span><button>commentaires</button></span>
-      </div>
-      <div>
-        <a href="http://placeholder.com"><img class="img rounded" src="https://via.placeholder.com/150"
-            alt="article 2"></a>
-        <h3>article 1</h3>
+      </article>
+      <article>
+        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="article 2"></a>
+        <h3>article 2</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iusto distinctio animi sapiente similique
           libero, velit accusamus nobis cumque officiis? Unde culpa provident quis, molestiae explicabo eius fugiat
           impedit consequuntur.</p>
         <span><button>lire</button></span>
         <span><button>commentaires</button></span>
-      </div>
+      </article>
     </section>
+    <hr>
     <section>
       <div>
         <h2 id="contact">contact</h2>
@@ -155,7 +166,7 @@
     </section>
   </main>
   <footer>
-    <p><a href="http://monportfolio.com">monportfolio.com</a></p>
+    <p>monportfolio.com</p>
   </footer>
 </body>
 
