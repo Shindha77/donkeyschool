@@ -1,93 +1,169 @@
-body {
-    font-family: bradley hand, cursive;
-    padding: 5px;
+html {
+    height: 100%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Bradley Hand, cursive, sans-serif;
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    position: fixed;
+    top: 5px; 
+    right: 5px;
+    left: 5px; 
+    background-color: rgb(109, 109, 109)
+}
+
+main {
+    margin: 100px 5px 5px 5px;
+}
+
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+nav > ul > li > a {
+    font-size: 30px;
+    padding: 20px 30px;
+    color: white;
+}
+
+nav > ul > li:hover a {
+    padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li {
+    border-bottom: black 1px solid;
+}
+
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 270px;
+}
+
+.menu-projets:hover {
+    border-top: 5px solid rgb(219, 83, 20);
+    background-color: rgba(211, 122, 39, 0.3);
+}
+
+.menu-etudes:hover {
+    border-top: 5px solid rgb(47, 199, 26);
+    background-color: rgba(76, 204, 104, 0.3);
+}
+
+.menu-articles:hover {
+    border-top: 5px solid rgb(199, 187, 24);
+    background-color: rgba(219, 216, 30, 0.3);
+}
+
+.menu-contact:hover {
+    border-top: 5px solid rgb(20, 50, 219);
+    background-color: rgba(101, 169, 233, 0.3);
+}
+
+.menu-projets .submenu {
+    background-color: rgb(211, 98, 45);
+}
+
+.menu-etudes .submenu {
+    background-color: rgb(93, 190, 80);
+}
+
+.menu-articles .submenu {
+    background-color: rgb(190, 197, 84)
+}
+
+.menu-contact .submenu {
+    background-color: rgb(108, 125, 221)
+}
+
+.menu-projets .submenu li:hover {
+    background-color: rgb(163, 73, 32);
+}
+.menu-etudes .submenu li:hover {
+    background-color: rgb(67, 143, 57);
+}
+
+.menu-articles .submenu li:hover {
+    background-color: rgb(142, 148, 63)
+}
+
+.menu-contact .submenu li:hover {
+    background-color: rgb(55, 71, 160)
+}
+
+.submenu li:hover a {
+    color: blanchedalmond;
+    font-weight: bold;
 }
 
 .img:hover {
     opacity: 0.7;
+    transform: scale(1.2);
 }
 
 .rounded {
     border-radius: 3px;
 }
-.date {
-    border: 1px solid black;
-}
 
-img:first-child {
+
+div:nth-of-type(4) {
     filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
 }
 
-.dropdownmenu {
+.img-top {
     width: 100%;
-    border: 1px solid black;
-}
-.dropdownmenu,
-.dropdownmenu ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-.dropdownmenu ul {
-    display: none;
-}
-.dropdownmenu li {
-    position: relative;
-}
-.dropdownmenu a {
-    display: block;
-    width: 120px;
-    height: 30px;
-    line-height: 30px;
-    padding: 3px 10px;
-    text-align: center;
-}
-.dropdownmenu li:hover ul {
-    display: block;
-    position: absolute;
-    top: 36px;
-    left: 0px;
-    z-index: 100;
-}.dropdownmenu li {
-    background-color: slategrey;
-}
-.dropdownmenu li a {
-    color: white;
-}
-.dropdownmenu li:hover {
-    background-color: rosybrown;
-}
-.dropdownmenu li:hover a {
-    color: black;
-}
-.dropdownmenu ul li {
-    background-color: slategray;
-}
-.dropdownmenu ul li:hover {
-    background-color: rosybrown;
-}
-.dropdownmenu ul li a {
-    color: white;
-}
-.dropdownmenu ul li:hover a {
-    color: black;
 }
 
-nav {
-    position: fixed;
+.img-fluide {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-main {
-    position:relative;
+header {
+    display: flex;
+    width: auto;
+    justify-content: center;
 }
 
 nav {
@@ -97,3 +173,65 @@ nav {
 main {
     z-index:1;
 }
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(245, 231, 206);
+    letter-spacing: 10px;
+    font-size: 100px;
+    border: white solid 5px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.test {
+    margin: 10px;
+}
+
+.titre {
+    height: 300px;
+    width: 1OOvw;
+    font-size: 100px;
+    color: rgb(255, 175, 1);
+    text-transform: capitalize;
+    text-align: center;
+    background-image: url(/img/serveur1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.date {
+    display: flex
+}
+
+.date p {
+    padding: 10px;
+}
+.date p:first-child {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.d-flex {
+   display: flex;
+}
+
+div > ul > li {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: rgb(255, 175, 1);
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    text-align: center;
+    }
+
