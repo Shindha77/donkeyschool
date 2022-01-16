@@ -45,31 +45,34 @@
   </header>
   <main>
     <section>
-      <div>
-        <img class="img rounded" src="img/terrasse.jpg" alt="photo de quelquechose">
-        <p>nom prénom</p>
-      </div>
+      <h1>mon portfolio</h1>
     </section>
+    <section class="titre">
+      <h2 class="test">nom prénom</h2>
+    </section>
+    <hr>
     <section>
       <div>
         <h2 id="projets">projets réalisés</h2>
       </div>
+    </section>
+    <section class="d-flex">
       <div>
-        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="projet 1">
+        <img src="/img/download.png" alt="projet 1">
         <h3>projet 1</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa autem at, beatae fugiat placeat tempore,
           rem impedit molestiae magnam neque officiis voluptatem odio sit eveniet suscipit consequuntur a eaque?</p>
         <button>en savoir plus</button>
       </div>
       <div>
-        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="projet 2">
+        <img src="/img/download.png" alt="projet 2">
         <h3>projet 2</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa autem at, beatae fugiat placeat tempore,
           rem impedit molestiae magnam neque officiis voluptatem odio sit eveniet suscipit consequuntur a eaque?</p>
         <button>en savoir plus</button>
       </div>
       <div>
-        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="projet 3">
+        <img src="/img/download.png" alt="projet 3">
         <h3>projet 3</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsa autem at, beatae fugiat placeat tempore,
           rem impedit molestiae magnam neque officiis voluptatem odio sit eveniet suscipit consequuntur a eaque?</p>
@@ -81,8 +84,8 @@
       <div>
         <h2 id="études">études</h2>
       </div>
-      <div>
-        <img class="rounded" src="https://via.placeholder.com/150" alt="photo de profile">
+      <div class="d-flex">
+        <img src="img/kado.jpg" alt="photo de profile">
         <ul>
           <li>nom</li>
           <li>prénom</li>
@@ -91,27 +94,27 @@
           <li>numéro de téléphone</li>
         </ul>
       </div>
-      <hr>
-      <div>
-        <p class="date">date</p>
+    <hr>
+      <div class="date">
+        <p>date</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti sunt laborum, repudiandae
           ipsum
           soluta dolor dicta hic assumenda at cumque a magni quas tenetur labore neque praesentium? Id, quaerat.</p>
       </div>
-      <div>
-        <p class="date">date</p>
+      <div class="date">
+        <p>date</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti sunt laborum, repudiandae
           ipsum
           soluta dolor dicta hic assumenda at cumque a magni quas tenetur labore neque praesentium? Id, quaerat.</p>
       </div>
-      <div>
-        <p class="date">date</p>
+      <div class="date">
+        <p>date</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti sunt laborum, repudiandae
           ipsum
           soluta dolor dicta hic assumenda at cumque a magni quas tenetur labore neque praesentium? Id, quaerat.</p>
       </div>
-      <div>
-        <p class="date">date</p>
+      <div class="date">
+        <p>date</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores corrupti sunt laborum, repudiandae
           ipsum
           soluta dolor dicta hic assumenda at cumque a magni quas tenetur labore neque praesentium? Id, quaerat.</p>
@@ -122,27 +125,29 @@
       <div>
         <h2 id="articles">articles</h2>
       </div>
-      <article>
-        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="article 1">
-        <h3>article 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iusto distinctio animi sapiente similique
-          libero, velit accusamus nobis cumque officiis? Unde culpa provident quis, molestiae explicabo eius fugiat
-          impedit consequuntur.</p>
-        <span><button>lire</button></span>
-        <span><button>commentaires</button></span>
-      </article>
-      <article>
-        <img class="img rounded" src="https://via.placeholder.com/150x50" alt="article 2"></a>
-        <h3>article 2</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iusto distinctio animi sapiente similique
-          libero, velit accusamus nobis cumque officiis? Unde culpa provident quis, molestiae explicabo eius fugiat
-          impedit consequuntur.</p>
-        <span><button>lire</button></span>
-        <span><button>commentaires</button></span>
-      </article>
+      <div class="d-flex">
+        <article>
+          <img src="img/terrasse.jpg" alt="article 1">
+          <h3>article 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iusto distinctio animi sapiente similique
+            libero, velit accusamus nobis cumque officiis? Unde culpa provident quis, molestiae explicabo eius fugiat
+            impedit consequuntur.</p>
+          <span><button>lire</button></span>
+          <span><button>commentaires</button></span>
+        </article>
+        <article>
+          <img src="/img/terrasse.jpg" alt="article 2">
+          <h3>article 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit iusto distinctio animi sapiente similique
+            libero, velit accusamus nobis cumque officiis? Unde culpa provident quis, molestiae explicabo eius fugiat
+            impedit consequuntur.</p>
+          <span><button>lire</button></span>
+          <span><button>commentaires</button></span>
+        </article>
+      </div>
     </section>
     <hr>
-    <section>
+    <section class="contact">
       <div>
         <h2 id="contact">contact</h2>
       </div>
@@ -160,13 +165,13 @@
           <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
         </div>
         <div class="button">
-          <button type="submit">envoyer</button>
+          <button type="submit"><a href="contact.html">envoyer</a></button>
         </div>
       </form>
     </section>
   </main>
   <footer>
-    <p>monportfolio.com</p>
+    <p><a href="http://monportfolio.com"> monportfolio.com</a></p>
   </footer>
 </body>
 

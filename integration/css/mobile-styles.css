@@ -5,21 +5,21 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Verdana, Calibri, sans-serif;
+    font-family:Bradley Hand, cursive,  Verdana, sans-serif;
     background-color: rgb(32, 32, 32);
-    color: rgb(245, 231, 206);
+    color: rgb(255, 255, 255);
 }
 
 nav {
     position: fixed;
-    top: 1px;
-    left: 2px;
-    width: 100%;
+    top: 5px; 
+    left: 5px;
+    right: 5px;
     background-color: rgb(109, 109, 109)
 }
 
 main {
-    margin-top: 70px;
+    margin: 90px 5px 5px 5px;
 }
 
 nav > ul {
@@ -40,12 +40,6 @@ nav > ul > li {
     position: relative;
 }
 
-nav > ul::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .submenu {
     display: none;
 }
@@ -53,17 +47,17 @@ nav > ul::after {
 nav a {
     display: inline-block;
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 nav > ul > li > a {
-    font-size: 20px;
-    padding: 20px 30px;
+    font-size: 25px;
+    padding: 15px 5px;
     color: white;
 }
 
 nav > ul > li:hover a {
-    padding: 15px 30px 20px 30px;
+    padding: 10px 5px;
 }
 
 nav li:hover .submenu {
@@ -142,47 +136,68 @@ nav li:hover .submenu {
     font-weight: bold;
 }
 
-footer {
-    background-color: rgb(255, 175, 1);
-    color: rgb(32, 32, 32);
-    text-align: center;
-    }
-
-
-
-.img:hover {
-    opacity: 0.7;
+img:hover {
+    opacity: 0.6;
 }
 
-.rounded {
+img {
     border-radius: 3px;
-}
-.date {
-    border: 1px solid rgb(255, 175, 1);
-}
-
-img:first-child {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
 }
 
 header {
-    width: auto;
+    width: auto;   
 }
-.img {
-    width: 100vh;
-    height: auto;
-}
-
 
 nav {
     z-index:2;
+    text-transform: capitalize;
 }
 
 main {
     z-index:1;
 }
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(245, 231, 206);
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin: 20px;
+    border: white solid 5px;
+    margin: 5px Opx 5px 0px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.test {
+    margin: 10px;
+}
+
+.titre {
+    height: 300px;
+    width: 1OOvw;
+    font-size: 100px;
+    color: rgb(255, 175, 1);
+    text-align: center;
+    background-image: url(/img/serveur1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(255, 175, 1);
+    color: rgb(32, 32, 32);
+    text-align: center;
+    }
 
